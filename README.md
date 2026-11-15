@@ -22,6 +22,9 @@ Arayüz, F-Droid ve Google Play Store'dan esinlenen kart tabanlı bir tasarıma 
 - [Git](https://git-scm.com), `PATH` içinde
 - İnternet bağlantısı (repo, npm paketleri ve Electron ikilisi indirilir)
 
+## Örnek Ekran Görüntüsü
+<img width="1092" height="772" alt="image" src="https://github.com/user-attachments/assets/67990f41-7c9d-4829-bbec-841e096b4a58" />
+
 ## Kurulum ve çalıştırma
 
 ```bash
