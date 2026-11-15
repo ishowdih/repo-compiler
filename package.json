@@ -1,0 +1,55 @@
+{
+  "name": "repo-compiler",
+  "productName": "Repo Compiler",
+  "version": "1.0.0",
+  "description": "GitHub repolarını tek tıkla masaüstü uygulamasına dönüştürün",
+  "main": "main.js",
+  "author": "Repo Compiler",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable",
+    "dist:win": "electron-builder --win portable",
+    "dist:mac": "electron-builder --mac dmg",
+    "dist:linux": "electron-builder --linux AppImage"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.example.repocompiler",
+    "productName": "Repo Compiler",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "compiler.js",
+      "index.html",
+      "style.css",
+      "renderer.js",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "wrapper-main.js",
+        "to": "wrapper-main.js"
+      }
+    ],
+    "win": {
+      "target": "portable"
+    },
+    "portable": {
+      "artifactName": "Repo-Compiler-Portable.exe"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Development"
+    }
+  }
+}
