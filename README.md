@@ -1,4 +1,8 @@
 # Repo Compiler
+<img width="2560" height="720" alt="image" src="https://github.com/user-attachments/assets/dab48343-12dd-4f69-8b1f-bb397dff102a" />
+
+
+
 
 GitHub repolarını tek tıkla masaüstü uygulamasına (`.exe` / `.app` / Linux binary) dönüştüren, Electron tabanlı bir araç. Bir repo linki yapıştırırsınız; uygulama repoyu indirir, projeyi analiz eder, bağımlılıkları kurar, derler ve sonucu `Compiled Repos/<Repo-Adı>/` klasörüne taşır.
 
